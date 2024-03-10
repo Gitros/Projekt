@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+      "target": "es5", // Set target for compiled JavaScript
+      "lib": ["dom", "dom.iterable", "esnext"], // Standard libraries
+      "allowJs": true, // Allow mixing TypeScript and JavaScript files
+      "skipLibCheck": true, // Exclude lib.d.ts from type checking
+      "esModuleInterop": true, // Allow importing CommonJS modules
+      "allowSyntheticDefaultImports": true, // Allow synthetic default imports
+      "strict": true, // Enable strict mode
+      "forceConsistentCasingInFileNames": true, // Enforce consistent file name casing
+      "module": "commonjs", // Module system (commonjs for Node.js)
+      "outDir": "dist", // Output directory for compiled JavaScript
+      "sourceMap": true, // Generate source maps
+      "declaration": false, // Don't generate declaration files
+      "strictNullChecks": true, // Enable strict null checks
+      "noImplicitAny": true // Disallow implicit any
+    },
+    "include": ["src"] // Include source files for compilation (optional)
+  }
+  
