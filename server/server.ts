@@ -9,7 +9,7 @@ const port = 3000;
 app.use(bodyParser.json());
 
 // Register user routes
-app.use('/users', router);
+app.use('', router);
 
 app.listen(port, () => {
   console.log(`Server listening on port ${port}`);

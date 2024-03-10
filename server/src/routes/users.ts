@@ -2,9 +2,8 @@ import express from 'express';
 import fs from 'path'; // For file system access (if using data.ts)
 import User from '../models/user';
 
-const dataPath = fs.join(__dirname, '../data.json'); // Path to data file (if using data.ts)
 
-const defaultPath = 'users';
+const defaultPath = '/users';
 const router = express.Router();
 
 // Load users from JSON file (utility function can be added here)
