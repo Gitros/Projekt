@@ -1,20 +1,20 @@
-import { createBrowserRouter } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import './App.css';
 import Users from './pages/Users';
+import User from './pages/User';
+import Gallery from './pages/Gallery';
 
-createBrowserRouter([
+const router = createBrowserRouter([
   {path: '/', element: <Users />},
-  {}
+  {path: '/user', element: <User />},
+  {path: '/gallery', element: <Gallery />}
 ])
 
 
 function App() {
-  return (
-    <div>
-      <Users />
-    </div>
-  );
+  return <RouterProvider router={router} />
+
 }
 
 export default App;
