@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import User from '../models/user';
+import { Link } from 'react-router-dom';
 
 const Users: React.FC<{}> = () => {
     const [availablePeople, setUsers] = useState<User[]>([]);
@@ -38,6 +39,9 @@ const Users: React.FC<{}> = () => {
                     <li key={item.id}>{item.name} {item.lastName}</li>
                 ))}
             </ul>
+            <p>
+                Go to <Link to="/user">this user</Link>
+            </p>
         </div>
     );
 };
