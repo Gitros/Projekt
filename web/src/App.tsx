@@ -1,5 +1,13 @@
+import { createBrowserRouter } from 'react-router-dom';
+
 import './App.css';
-import Users from './components/Users';
+import Users from './pages/Users';
+
+createBrowserRouter([
+  {path: '/', element: <Users />},
+  {}
+])
+
 
 function App() {
   return (
