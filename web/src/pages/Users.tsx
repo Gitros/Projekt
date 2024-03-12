@@ -35,7 +35,7 @@ const Users: React.FC<{}> = () => {
             {error && <div>Error: {error}</div>}
             <ul>
                 {availablePeople.map((item) => (
-                    <li key={item.id}>{item.name}</li>
+                    <li key={item.id}>{item.name} {item.lastName}</li>
                 ))}
             </ul>
         </div>
