@@ -31,6 +31,8 @@ const Users: React.FC<{}> = () => {
         fetchData();
     }, []);
 
+    
+
     return (
         <div>
             {error && <div>Error: {error}</div>}
