@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import User from '../models/user';
 import { Link } from 'react-router-dom';
+import MainNavigation from '../components/MainNavigation';
 
 const Users: React.FC<{}> = () => {
     const [availablePeople, setUsers] = useState<User[]>([]);
@@ -34,6 +35,8 @@ const Users: React.FC<{}> = () => {
     
 
     return (
+        <>
+       <MainNavigation />
         <div>
             {error && <div>Error: {error}</div>}
             <ul>
@@ -45,6 +48,7 @@ const Users: React.FC<{}> = () => {
                 Go to <Link to="/user">this user</Link>
             </p>
         </div>
+        </>
     );
 };
 
